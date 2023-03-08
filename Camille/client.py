@@ -11,7 +11,7 @@ clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 clientSocket.connect((host,port))
 
 #attend une réponse du serveur
-dataFromServer = clientSocket.recv(10000)
+dataFromServer = clientSocket.recv(1000000)
 #affiche la réponse du serveur
 print(">"+ dataFromServer.decode())
 
@@ -22,7 +22,7 @@ while 1:
     #envoie d'un message au serveur
     clientSocket.send(data.encode())
     #attend la réponse du serveur
-    dataFromServer = clientSocket.recv(10000)
+    dataFromServer = clientSocket.recv(1000000)
     #affiche la réponse du serveur
     print(">" + dataFromServer.decode())
 

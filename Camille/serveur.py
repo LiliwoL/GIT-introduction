@@ -90,7 +90,7 @@ Pour terminer la connexion envoyer 'FIN'.
 fin = "fin"
 while(fin != "FIN"):
     #attend la réponse du client
-    dataFromClient = clientConnecte.recv(10000)
+    dataFromClient = clientConnecte.recv(1000000)
     #affiche la réponse du client
     print(">" + dataFromClient.decode())
     #envoie d'un message au client
