@@ -2,8 +2,8 @@
 import socket
 
 # définition des variables
-port_d_ecoute = 63001
-nom_d_hote = '127.0.0.1'
+port_d_ecoute = 63000
+nom_d_hote = '0.0.0.0'
 
 # création du socket
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
